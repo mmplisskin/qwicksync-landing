@@ -19,6 +19,8 @@ gem 'gibbon'
 gem 'high_voltage'
 gem 'simple_form'
 gem 'sucker_punch'
+gem 'unicorn'
+
 
 
 
