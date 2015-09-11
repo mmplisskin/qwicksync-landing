@@ -1,0 +1,40 @@
+<section class="offset valign-large">
+  <div class="row">
+    <div class="column">
+      <h1>
+      <i class="fa fa-paper-plane-o fa-2x slideExpandUp
+
+
+
+      "></i>
+      </h1>
+    </div>
+  </div>
+  <br>
+  <div class="row valign fade-in">
+    <div class="column">
+      <h1><b>Q</b>wick<b>S</b>ync makes file transfer  <i>easy</i></h1>
+
+
+
+    </div>
+
+  </div>
+  <br>
+  <br>
+  <br>
+
+
+  <div class="row">
+      <div class="form-centered valign fade-in-long">
+          <h3> Enter your email to try out the pre-release soon. </h3>
+        <%= simple_form_for @visitor do |f| %>
+          <%= f.error_notification %>
+          <%= f.input :email, label: false, :placeholder => 'andy@gmail.com...' %>
+
+          <%= f.button :submit, "Notify Me", :class => "submit" %>
+        <% end %>
+      </div>
+    <!-- </div> -->
+  </div>
+</section>

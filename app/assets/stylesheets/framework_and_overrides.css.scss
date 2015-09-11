@@ -1,0 +1,185 @@
+// import the CSS framework
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome";
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200);
+
+.fade-in {
+    opacity:0;  /* make things invisible upon start */
+    animation:fadeIn ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+
+    animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+
+    animation-duration: 1s;
+    animation-delay: 1.5s
+}
+
+.fade-in-long {
+    opacity:0;  /* make things invisible upon start */
+    animation:fadeIn ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+
+    animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+
+    animation-duration: 1.5s;
+    animation-delay: 3.5s
+}
+
+.slideRight{
+	animation-name: slideRight;
+	-webkit-animation-name: slideRight;
+
+	animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+
+	animation-timing-function: ease-in-out;
+	-webkit-animation-timing-function: ease-in-out;
+
+	visibility: visible !important;
+}
+
+// make all images responsive by default
+body{
+  animation-fill-mode:forwards;
+  @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: 400;
+  height: 100vh;
+  background: rgba(147,206,222,0.58);
+  background: -moz-linear-gradient(top, rgba(147,206,222,0.58) 0%, rgba(94,207,235,0.66) 51%, rgba(73,165,191,0.74) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(147,206,222,0.58)), color-stop(51%, rgba(94,207,235,0.66)), color-stop(100%, rgba(73,165,191,0.74)));
+  background: -webkit-linear-gradient(top, rgba(147,206,222,0.58) 0%, rgba(94,207,235,0.66) 51%, rgba(73,165,191,0.74) 100%);
+  background: -o-linear-gradient(top, rgba(147,206,222,0.58) 0%, rgba(94,207,235,0.66) 51%, rgba(73,165,191,0.74) 100%);
+  background: -ms-linear-gradient(top, rgba(147,206,222,0.58) 0%, rgba(94,207,235,0.66) 51%, rgba(73,165,191,0.74) 100%);
+  background: linear-gradient(to bottom, rgba(147,206,222,0.58) 0%, rgba(94,207,235,0.66) 51%, rgba(73,165,191,0.74) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93cede', endColorstr='#49a5bf', GradientType=0 );
+}
+
+*{
+  border-radius: 0px !important;
+  margin: 0 auto;
+
+}
+h1{
+  font-size: 4em;
+}
+
+img {
+  @extend .img-responsive;
+  margin: 0 auto;
+  }
+// override for the 'Home' navigation link
+.navbar-brand {
+  font-size: inherit;
+  }
+
+
+// THESE ARE EXAMPLES YOU CAN MODIFY
+// create your own classes
+// to make views framework-neutral
+.column {
+
+
+  @extend .col-md-6;
+  @extend .col-md-offset-0;
+
+  @extend .text-center;
+  @extend .col-xs-10;
+  @extend .col-xs-offset-1;
+  }
+.form {
+  @extend .col-md-6;
+
+  }
+.form-centered {
+  @extend .col-md-6;
+  @extend .col-md-offset-0;
+
+  @extend .col-sm-6;
+  @extend .col-sm-offset-3;
+
+  @extend .col-xs-10;
+  @extend .col-xs-offset-1;
+
+  // @extend .text-center;
+  // @extend .col-sm-offset-1;
+  }
+.btn{
+  background-color: #2E5475;
+}
+
+.submit {
+  @extend .btn;
+  @extend .btn-primary;
+  @extend .btn-lg;
+  @extend .col-md-12;
+  @extend .col-sm-12;
+  @extend .col-xs-12;
+  }
+
+.offset {
+  @extend .col-md-offset-4;
+
+  }
+.valign{
+  padding-top:  1em;
+}
+.valign-large{
+  padding-top: 8%;
+}
+
+
+// apply styles to HTML elements
+// to make views framework-neutral
+main {
+  @extend .container;
+  // background-color: #eee;
+  padding-bottom: 80px;
+  width: 100%;
+  margin-top: 51px; // accommodate the navbar
+  height: 100vh;
+  margin: 0 auto;
+
+
+
+
+  }
+section {
+  @extend .row;
+  margin-top: 20px;
+  // height: 100vh;
+  }
+
+  #footer {
+    position: absolute;
+    top: 98vh;
+    height: 60px;
+    // background-color: #222;
+  }
+
+
+  .form-control{
+    height: 57px;
+    font-size: 18px;
+  }
+
+  .btn-lg{
+    font-size: 22px;
+  }
+
+
+//   .loaded header {
+//   -webkit-transform: none;
+//   -moz-transform: none;
+//   -ms-transform: none;
+//   -o-transform: none;
+//   transform: none;
+//   opacity: 1;
+// }
+// .loaded #content {
+//   -webkit-transform: none;
+//   -moz-transform: none;
+//   -ms-transform: none;
+//   -o-transform: none;
+//   transform: none;
+//   opacity: 1;
+// }
