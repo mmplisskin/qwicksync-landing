@@ -13,6 +13,7 @@ gem  'nokogiri', '~> 1.6.6.2'
 
 gem 'bootstrap-sass', '~> 3.3.5'
 gem "font-awesome-rails"
+gem 'kgio', '~> 2.10.0'
 
 # gem 'bootstrap-sass'
 gem 'gibbon'
