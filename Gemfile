@@ -9,6 +9,8 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'figaro'
+gem  'nokogiri', '~> 1.6.6.2'
+
 group :development, :test do
   gem 'byebug'
 end
@@ -16,6 +18,7 @@ group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
 end
+
 gem 'bootstrap-sass', '~> 3.3.5'
 gem "font-awesome-rails"
 
