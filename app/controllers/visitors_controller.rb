@@ -7,10 +7,20 @@ class VisitorsController < ApplicationController
   def create
     @visitor = Visitor.new(params.require(:visitor).permit(:email))
     if @visitor.save
-      redirect_to root_path, notice: "Signed up #{@visitor.email}."
+      redirect_to visitor_path(@visitor.id)
     else
       render :new
     end
   end
+
+  def show
+    @visitor = Visitor.find(params[:id])
+  end
+
+  def thanks
+    @visitor = Visitor.find(params[:id])
+  end
+
+
 
 end

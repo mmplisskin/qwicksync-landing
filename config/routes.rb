@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  resources :visitors, only: [:new, :create]
+  resources :visitors
   root to: 'visitors#new'
 end
