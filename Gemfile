@@ -20,10 +20,10 @@ gem 'gibbon'
 gem 'high_voltage'
 gem 'simple_form'
 gem 'sucker_punch'
+gem 'sidekiq'
 # gem 'unicorn'
 
-
-
+gem 'sinatra', :require => nil
 
 group :development do
   gem 'web-console', '~> 2.0'
@@ -31,6 +31,7 @@ group :development do
   gem 'better_errors'
   gem 'quiet_assets'
   gem 'rails_layout'
+  gem 'pry-byebug'
   # gem 'spring-commands-rspec'
 end
 # group :development, :test do
