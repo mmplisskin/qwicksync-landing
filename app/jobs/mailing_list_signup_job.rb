@@ -6,6 +6,7 @@ class MailingListSignupJob < ActiveJob::Base
   end
 
   def subscribe(user)
+
     mailchimp = Gibbon::Request.new(api_key: Rails.application.secrets.mailchimp_api_key)
     list_id = Rails.application.secrets.mailchimp_list_id
     result = mailchimp.lists(list_id).members.create(
